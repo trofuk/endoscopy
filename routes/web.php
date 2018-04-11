@@ -155,12 +155,6 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function() {
 		
 });
 
-// Route::auth();
+Route::get('404',['as'=>'404','uses'=>'ErrorHandlerController@errorCode404']);
 
-// Route::get('/home', 'HomeController@index');
-
-
-
-// Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('405',['as'=>'405','uses'=>'ErrorHandlerController@errorCode405']);
