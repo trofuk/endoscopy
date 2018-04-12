@@ -26,7 +26,7 @@ class ServicesEditController extends Controller
 
    			$service->delete();
 
-   			return redirect('admin')->with('status', 'Service has been successfully deleted');
+   			return redirect('admin/services')->with('status', 'Service has been successfully deleted');
 
    		}
 
@@ -79,7 +79,7 @@ class ServicesEditController extends Controller
     		$service->fill($input);
 
     		if($service->update())  {
-    			return redirect('admin')->with('status', 'Service has been successfully updated');
+    			return redirect('admin/services')->with('status', 'Service has been successfully updated');
     		}
 
 

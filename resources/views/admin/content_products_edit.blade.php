@@ -14,7 +14,7 @@
 	
 	<div style="clear: both;"></div>
 	<div class="form-group">
-		 {!! Form::label('type', 'Type:',['class'=>'col-xs-2 control-label']) !!}
+		 {!! Form::label('type', 'Price:',['class'=>'col-xs-2 control-label']) !!}
 		<div class="col-xs-8" style="margin-bottom: 15px;">
 			{!! Form::text('type', $data['type'], ['class' => 'form-control','placeholder'=>'Input product type']) !!}
 		</div>

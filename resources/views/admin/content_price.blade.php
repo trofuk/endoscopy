@@ -1,4 +1,4 @@
-<div style="margin:80px 50px 0px 50px;">   
+<div style="margin:100px 50px 0px 50px;">   
 
 @if($path)
  

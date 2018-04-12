@@ -66,7 +66,7 @@ class FactsAddController extends Controller
     		$fact->fill($input);
 
     		if($fact->save())  {
-    			return redirect('admin')->with('status', 'Fact has been successfully added');
+    			return redirect('admin/facts')->with('status', 'Fact has been successfully added');
     		}
     		
 

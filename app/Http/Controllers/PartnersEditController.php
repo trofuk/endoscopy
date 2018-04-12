@@ -26,7 +26,7 @@ class PartnersEditController extends Controller
 
    			$partner->delete();
 
-   			return redirect('admin')->with('status', 'Partner has been successfully deleted');
+   			return redirect('admin/partners')->with('status', 'Partner has been successfully deleted');
 
    		}
 
@@ -77,7 +77,7 @@ class PartnersEditController extends Controller
     		$partner->fill($input);
 
     		if($partner->update())  {
-    			return redirect('admin')->with('status', 'Partner has been successfully updated');
+    			return redirect('admin/partners')->with('status', 'Partner has been successfully updated');
     		}
 
 

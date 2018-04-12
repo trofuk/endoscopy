@@ -112,7 +112,7 @@ class ProductsAddController extends Controller
     		$product->fill($input);
 
     		if($product->save())  {
-    			return redirect('admin')->with('status', 'Product has been successfully added');
+    			return redirect('admin/products')->with('status', 'Product has been successfully added');
     		}
     		
 

@@ -21,12 +21,14 @@ class FaqsEditController extends Controller
    			
 
    				$file_1 = public_path().'/assets/img/'.$faq->icon;
-   				unlink($file_1);
-   			
+          if ((file_exists($file_1))&&(is_file($file_1)))
+          {
+   				 unlink($file_1);
+   			  }
 
    			$faq->delete();
 
-   			return redirect('admin')->with('status', 'Faq has been successfully deleted');
+   			return redirect('admin/faqs')->with('status', 'Faq has been successfully deleted');
 
    		}
 
@@ -79,7 +81,7 @@ class FaqsEditController extends Controller
     		$faq->fill($input);
 
     		if($faq->update())  {
-    			return redirect('admin')->with('status', 'Faq has been successfully updated');
+    			return redirect('admin/faqs')->with('status', 'Faq has been successfully updated');
     		}
 
 

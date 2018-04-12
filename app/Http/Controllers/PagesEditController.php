@@ -23,24 +23,35 @@ class PagesEditController extends Controller
    			if($count%2 == 0){
 
    				$file_1 = public_path().'/assets/img/'.$page->image_1;
-   				// dd($file_1);
-   				unlink($file_1);
+   				if ((file_exists($file_1))&&(is_file($file_1)))
+          {
+   				 unlink($file_1);
+          }
    			}
    			else
    			{
 
    				$file_1 = public_path().'/assets/img/'.$page->image_1;
-   				unlink($file_1);
-   				$file_2 = public_path().'/assets/img/'.$page->image_2;
-   				unlink($file_2);
+          if ((file_exists($file_1))&&(is_file($file_1)))
+          {  
+   				 unlink($file_1);
+   				}
+          $file_2 = public_path().'/assets/img/'.$page->image_2;
+          if ((file_exists($file_2))&&(is_file($file_2)))
+          {  
+           unlink($file_2);
+          }
    				$file_3 = public_path().'/assets/img/'.$page->image_3;
-   				unlink($file_3);
+          if ((file_exists($file_3))&&(is_file($file_3)))
+          {  
+           unlink($file_3);
+          }
    			}
 
 
    			$page->delete();
 
-   			return redirect('admin')->with('status', 'Page has been successfully deleted');
+   			return redirect('admin/pages')->with('status', 'Page has been successfully deleted');
 
    		}
 
@@ -159,7 +170,7 @@ class PagesEditController extends Controller
     		$page->fill($input);
 
     		if($page->update())  {
-    			return redirect('admin')->with('status', 'Page has been successfully updated');
+    			return redirect('admin/pages')->with('status', 'Page has been successfully updated');
     		}
 
 

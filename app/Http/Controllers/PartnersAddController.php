@@ -63,7 +63,7 @@ class PartnersAddController extends Controller
     		$partner->fill($input);
 
     		if($partner->save())  {
-    			return redirect('admin')->with('status', 'Partner has been successfully added');
+    			return redirect('admin/partners')->with('status', 'Partner has been successfully added');
     		}
     		
 

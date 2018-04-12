@@ -21,7 +21,7 @@ class ContactsEditController extends Controller
 			$contact->fill($input);
 
     		if($contact->update())  {
-    			return redirect('admin')->with('status', 'Contact has been successfully updated');
+    			return redirect('admin/contacts')->with('status', 'Contact has been successfully updated');
     		}
 
 

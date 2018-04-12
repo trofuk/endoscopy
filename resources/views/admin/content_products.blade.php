@@ -1,4 +1,4 @@
-<div style="margin:50px 50px 0px 50px;">   
+<div style="margin:100px 50px 0px 50px;">   
 
 @if($products)
  
@@ -7,7 +7,7 @@
 	    	<tr style="background-color: #f3f3bb">    
 	                <td style="font-weight: 600; text-align: center;">Id</td>
 	                <td style="font-weight: 600; text-align: center;">Name</td>
-	                <td style="font-weight: 600; text-align: center;">Type</td>
+	                <td style="font-weight: 600; text-align: center;">Price</td>
 	                <td style="font-weight: 600; text-align: center;">Model</td>
 	               
 	                <td style="font-weight: 600; text-align: center;">Description</td>

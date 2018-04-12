@@ -26,7 +26,7 @@ class TestimoniansEditController extends Controller
 
    			$testimonian->delete();
 
-   			return redirect('admin')->with('status', 'Testimonian has been successfully deleted');
+   			return redirect('admin/testimonians')->with('status', 'Testimonian has been successfully deleted');
 
    		}
 
@@ -60,7 +60,7 @@ class TestimoniansEditController extends Controller
     		
             
 
-            	if($request->hasFile('images'))  {
+        	if($request->hasFile('images'))  {
     			$file_1 = $request->file('images');
     			$input['images'] = 'people_'.$id.'.jpg';
     			$file_1->move(public_path().'/assets/img', $input['images']);
@@ -78,7 +78,7 @@ class TestimoniansEditController extends Controller
     		$testimonian->fill($input);
 
     		if($testimonian->update())  {
-    			return redirect('admin')->with('status', 'Testimonian has been successfully updated');
+    			return redirect('admin/testimonians')->with('status', 'Testimonian has been successfully updated');
     		}
 
 

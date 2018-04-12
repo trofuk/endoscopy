@@ -21,12 +21,14 @@ class FactsEditController extends Controller
    			
 
    				$file_1 = public_path().'/assets/img/'.$fact->icon;
-   				unlink($file_1);
-   			
+          if ((file_exists($file_1))&&(is_file($file_1)))
+          {
+   				 unlink($file_1);
+   			  }
 
    			$fact->delete();
 
-   			return redirect('admin')->with('status', 'Fact has been successfully deleted');
+   			return redirect('admin/facts')->with('status', 'Fact has been successfully deleted');
 
    		}
 
@@ -80,7 +82,7 @@ class FactsEditController extends Controller
     		$fact->fill($input);
 
     		if($fact->update())  {
-    			return redirect('admin')->with('status', 'Fact has been successfully updated');
+    			return redirect('admin/facts')->with('status', 'Fact has been successfully updated');
     		}
 
 

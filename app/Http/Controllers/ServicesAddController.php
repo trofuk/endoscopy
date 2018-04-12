@@ -65,7 +65,7 @@ class ServicesAddController extends Controller
     		$service->fill($input);
 
     		if($service->save())  {
-    			return redirect('admin')->with('status', 'Service has been successfully added');
+    			return redirect('admin/services')->with('status', 'Service has been successfully added');
     		}
     		
 

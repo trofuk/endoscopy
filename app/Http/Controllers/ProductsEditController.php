@@ -21,33 +21,34 @@ class ProductsEditController extends Controller
    			
 
    				$file_1 = public_path().'/assets/img/products/'.$product->image_main;
-   				if (file_exists($file_1)) 
+   				if ((file_exists($file_1))&&(is_file($file_1)))
+          {  
    					unlink($file_1);
-   				
+   				}
    				$file_11 = public_path().'/assets/img/products/'.$product->image_1;
-   				if (file_exists($file_11))
+   				if ((file_exists($file_11))&&(is_file($file_11)))            
    				{
    					unlink($file_11);
    				}
    				$file_12 = public_path().'/assets/img/products/'.$product->image_2;
-   				if (file_exists($file_12))
+   				if ((file_exists($file_12))&&(is_file($file_12))) 
    				{
    					unlink($file_12);
    				}
    				$file_13 = public_path().'/assets/img/products/'.$product->image_3;
-   				if (file_exists($file_13))
+   				if ((file_exists($file_13))&&(is_file($file_13))) 
           {
    					unlink($file_13);
           }
    				$file_14 = public_path().'/assets/img/products/'.$product->image_4;
-   				if (file_exists($file_14))
+   				if ((file_exists($file_14))&&(is_file($file_14))) 
           {  
    					unlink($file_14);
   			  } 
 
    			$product->delete();
 
-   			return redirect('admin')->with('status', 'Product has been successfully deleted');
+   			return redirect('admin/products')->with('status', 'Product has been successfully deleted');
 
    		}
 
@@ -163,7 +164,7 @@ class ProductsEditController extends Controller
     		$product->fill($input);
 
     		if($product->update())  {
-    			return redirect('admin')->with('status', 'Product has been successfully updated');
+    			return redirect('admin/products')->with('status', 'Product has been successfully updated');
     		}
 
 

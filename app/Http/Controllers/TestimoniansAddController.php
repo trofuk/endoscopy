@@ -64,7 +64,7 @@ class TestimoniansAddController extends Controller
     		$testimonian->fill($input);
 
     		if($testimonian->save())  {
-    			return redirect('admin')->with('status', 'Testimonian has been successfully added');
+    			return redirect('admin/testimonians')->with('status', 'Testimonian has been successfully added');
     		}
     		
 

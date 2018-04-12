@@ -65,7 +65,7 @@ class FaqsAddController extends Controller
     		$faq->fill($input);
 
     		if($faq->save())  {
-    			return redirect('admin')->with('status', 'Faq has been successfully added');
+    			return redirect('admin/faqs')->with('status', 'Faq has been successfully added');
     		}
     		
 
