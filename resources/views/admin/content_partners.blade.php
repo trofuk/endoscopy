@@ -20,7 +20,7 @@
             <tr style="background-color: #f3f3bb">
                 <td style="font-weight: 600; text-align: center; vertical-align: middle;">{{ $partner->id }}</td>
                 <td style="text-align: center; vertical-align: middle;">{!! Html::link(route('partnersEdit',['partner'=>$partner->id]),$partner->name,['alt'=>$partner->name]) !!}</td>
-                <td style="text-align: center; vertical-align: middle;">{!! Html::image('assets/img/'.$partner->logo,'',['class'=>'img-responsive','width'=>'100px']) !!}</td>
+                <td style="text-align: center; vertical-align: middle;">{!! Html::image('assets/img/'.$partner->logo,'',['width'=>'100px']) !!}</td>
                 <td style="text-align: center; vertical-align: middle;">{{ $partner->created_at }}</td>
                 
                 <td style="text-align: center; vertical-align: middle;">

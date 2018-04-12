@@ -14,7 +14,7 @@
 Route::group(['middleware'=>'web'], function(){
 
 	Route::match(['get', 'post'], '/', ['uses'=>'IndexController@execute', 'as'=>'home']);
-	Route::match(['get', 'post'], '/#/contact', ['uses'=>'IndexController@execute', 'as'=>'contact']);
+	Route::match(['get', 'post'], '/contactus', ['uses'=>'IndexController@contactus', 'as'=>'contact']);
 	Route::match(['get', 'post'], '/#/about', ['uses'=>'IndexController@execute', 'as'=>'about']);
 	Route::get('/page/{alias}', ['uses'=>'PageController@execute', 'as'=>'page']);
 	

@@ -30,11 +30,11 @@
 				<td rowspan="4" style="text-align: center; word-wrap:break-word; max-width: 50px">{{ $product->model }}</td>
 
 				<td rowspan="4" style="max-width: 150px;text-align: center;word-wrap:break-word;">{!! $product->description !!}</td>
-                <td rowspan="4" style="text-align: center;"><h5>Main</h5>{!! Html::image('assets/img/products/'.$product->image_main,'',['class'=>'img-responsive','width'=>'100px']) !!}</td>
+                <td rowspan="4" style="text-align: center;"><h5>Main</h5>{!! Html::image('assets/img/products/'.$product->image_main,'',['width'=>'100px']) !!}</td>
 
 				
 				<td style="text-align: center; ">
-				<h5>Detail 1</h5>{!! Html::image('assets/img/products/'.$product->image_1,'',['class'=>'img-responsive','width'=>'200px']) !!}</div></td>
+				<h5>Detail 1</h5>{!! Html::image('assets/img/products/'.$product->image_1,'',['width'=>'200px']) !!}</div></td>
 
 
 
@@ -56,7 +56,7 @@
 				
 				<td style="text-align: center; ">
 				@if($product->image_2)	
-				<h5>Detail 2</h5>{!! Html::image('assets/img/products/'.$product->image_2,'',['class'=>'img-responsive','width'=>'200px']) !!}</div></td>
+				<h5>Detail 2</h5>{!! Html::image('assets/img/products/'.$product->image_2,'',['width'=>'200px']) !!}</div></td>
 				@endif
 			</tr>
 			
@@ -65,7 +65,7 @@
 
 				<td style="text-align: center; ">
 				@if($product->image_3)	
-				<h5>Detail 3</h5>{!! Html::image('assets/img/products/'.$product->image_3,'',['class'=>'img-responsive','width'=>'200px']) !!}</div></td>
+				<h5>Detail 3</h5>{!! Html::image('assets/img/products/'.$product->image_3,'',['width'=>'200px']) !!}</div></td>
 				@endif
 			</tr>	
 			<tr style="background-color: #f3f3bb">	
@@ -73,7 +73,7 @@
 				
 				<td style="text-align: center; ">
 				@if($product->image_4)	
-				<h5>Detail 4</h5>{!! Html::image('assets/img/products/'.$product->image_4,'',['class'=>'img-responsive','width'=>'200px']) !!}</div>
+				<h5>Detail 4</h5>{!! Html::image('assets/img/products/'.$product->image_4,'',['width'=>'200px']) !!}</div>
 				</td>
 				@endif
 			</tr>

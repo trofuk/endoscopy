@@ -25,7 +25,7 @@ class IndexController extends Controller
 {
     //
 
-    public function execute(Request $request) {
+    public function contactus (Request $request) {
 
     	 if($request->isMethod('POST'))
          {
@@ -55,7 +55,7 @@ class IndexController extends Controller
                 $mail_admin = env('MAIL_USERNAME');
 
                 $message->from($data['email'], $data['name']);
-                $message->to($mail_admin,'EndoscopyLviv')->subject('Question');
+                $message->to($mail_admin,'EndoscopyLviv')->subject('Запитання');
 
             });
            
@@ -69,12 +69,16 @@ class IndexController extends Controller
 
             if($result == null)  {
 
-                return redirect()->route('contact')->with('status', 'Ваше повідомлення успішно відправлено');
+                return redirect('/#/contact')->with('status', 'Ваше повідомлення успішно відправлено');
             }
 
             //mail
             
-         }
+        }
+
+        }
+
+        public function execute(Request $request) {
 
         $contacts = Contact::all(); 
         $facts = Fact::all();

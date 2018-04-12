@@ -27,7 +27,7 @@
                 <td style="max-width: 150px;text-align: center;word-wrap:break-word;">{{ $page->text_2 }}</td>
                 <td style="max-width: 150px;text-align: center;word-wrap:break-word;">{{ $page->text_3 }}</td>
                 <td colspan="2" style="max-width: 150px;text-align: center;word-wrap:break-word;">{{ $page->text_4 }}</td>
-                <td style="text-align: center;">{!! Html::image('assets/img/'.$page->image_1,'',['class'=>'img-responsive','width'=>'150px']) !!}</td>
+                <td style="text-align: center;">{!! Html::image('assets/img/'.$page->image_1,'',['width'=>'150px']) !!}</td>
                 <td>{{ $page->created_at }}</td>
                 
                 <td>
@@ -62,9 +62,9 @@
                 <td style="max-width: 150px;text-align: center;word-wrap:break-word;">{{ $page->text_1 }}</td>
                 <td style="max-width: 150px;text-align: center;word-wrap:break-word;">{{ $page->text_2 }}</td>
                 <td style="max-width: 150px;text-align: center;word-wrap:break-word;">{{ $page->text_3 }}</td>
-                <td>{!! Html::image('assets/img/'.$page->image_1,'',['class'=>'img-responsive','width'=>'150px']) !!}</td>
-                <td>{!! Html::image('assets/img/'.$page->image_2,'',['class'=>'img-responsive','width'=>'150px']) !!}</td>
-                <td>{!! Html::image('assets/img/'.$page->image_3,'',['class'=>'img-responsive','width'=>'150px']) !!}</td>
+                <td style="text-align: center;">{!! Html::image('assets/img/'.$page->image_1,'',['width'=>'150px']) !!}</td>
+                <td style="text-align: center;">{!! Html::image('assets/img/'.$page->image_2,'',['width'=>'150px']) !!}</td>
+                <td style="text-align: center;">{!! Html::image('assets/img/'.$page->image_3,'',['width'=>'150px']) !!}</td>
                 <td>{{ $page->created_at }}</td>
                 
                 <td>

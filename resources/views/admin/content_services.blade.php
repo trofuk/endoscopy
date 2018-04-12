@@ -22,7 +22,7 @@
                 <td style="font-weight: 600; text-align: center; vertical-align: middle;">{{ $service->id }}</td>
                 <td style="text-align: center; vertical-align: middle;">{!! Html::link(route('servicesEdit',['service'=>$service->id]),$service->name,['alt'=>$service->name]) !!}</td>
 				<td style="max-width: 150px;text-align: center;word-wrap:break-word;">{!! $service->text !!}</td>
-				<td style="text-align: center; vertical-align: middle;">{!! Html::image('assets/img/'.$service->icon,'',['class'=>'img-circle img-responsive','width'=>'90px']) !!}</td>
+				<td style="text-align: center; vertical-align: middle;">{!! Html::image('assets/img/'.$service->icon,'',['class'=>'img-circle','width'=>'90px']) !!}</td>
                 <td style="text-align: center; vertical-align: middle;">{{ $service->created_at }}</td>
                 
                 <td style="text-align: center; vertical-align: middle;">

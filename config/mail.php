@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'trofuk@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'Endoscope'),
+        'address' => env('MAIL_FROM_ADDRESS', 'rumskiy@endoscope.lviv.ua'),
+        'name' => env('MAIL_FROM_NAME', 'EndoscopyLviv'),
     ],
 
     /*

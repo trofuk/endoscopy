@@ -24,7 +24,7 @@
                 <td style="text-align: center; vertical-align: middle;">{!! Html::link(route('factsEdit',['fact'=>$fact->id]),$fact->name,['alt'=>$fact->name]) !!}</td>
 				<td style="max-width: 150px; text-align: center; vertical-align: middle; word-wrap:break-word;">{!! $fact->text !!}</td>
 				<td style="max-width: 150px; text-align: center; vertical-align: middle;">{!! $fact->counter !!}</td>
-				<td style="text-align: center; vertical-align: middle; background-color: grey;">{!! Html::image('assets/img/'.$fact->icon,'',['class'=>'img-responsive','width'=>'90px']) !!}</td>
+				<td style="text-align: center; vertical-align: middle; background-color: grey;">{!! Html::image('assets/img/'.$fact->icon,'',['width'=>'90px']) !!}</td>
                 <td style="text-align: center; vertical-align: middle;">{{ $fact->created_at }}</td>
                 
                 <td style="text-align: center; vertical-align: middle;">

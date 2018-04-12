@@ -44,6 +44,6 @@
 		</div>
 	</div>
 	<div class="copyright">
-		<span>2018 All rights reserved. Developed by <a href="http://electricblaze.com/">Dmytro Trofimenko</a></span>
+		<span>2018 All rights reserved. Developed by <a href="#">Dmytro Trofimenko</a></span>
 	</div>
 </div>

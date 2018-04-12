@@ -113,16 +113,17 @@
     var assetBaseUrl = "{{ asset('') }}";
 </script>
 
-<!-- <script>
+<script>
 	function submitForm() {
-		$.ajax({type:'POST', url:assetBaseUrl + 'assets/email-action.php', data:$('#contact-form').serialize(), success: function(response) {
+		$.ajax({type:'POST', url:('#contact-form').attr('action'), data:$('#contact-form').serialize(), success: function(response) {
+      alert('your message');
 		   $('.submit').html('send');
 		   $('.success').addClass('active');
 		   document.contactform.reset();                                 
 		}});                
 		return false;
 	}	
-</script> -->
+</script>
 
 
 

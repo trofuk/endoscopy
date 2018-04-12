@@ -23,7 +23,7 @@
                 <td style="font-weight: 600; text-align: center; ">{{ $testimonian->id }}</td>
                 <td style="text-align: center; ">{!! Html::link(route('testimoniansEdit',['testimonian'=>$testimonian->id]),$testimonian->name,['alt'=>$testimonian->name]) !!}</td>
 				<td style="text-align: center; ">{{ $testimonian->position }}</td>                
-                <td style="text-align: center; ">{!! Html::image('assets/img/'.$testimonian->images,'',['class'=>'img-circle img-responsive','width'=>'100px']) !!}</td>
+                <td style="text-align: center; ">{!! Html::image('assets/img/'.$testimonian->images,'',['class'=>'img-circle','width'=>'100px']) !!}</td>
 				<td style="max-width: 150px;text-align: center;word-wrap:break-word;">{{ $testimonian->text }}</td>
                 <td style="text-align: center; ">{{ $testimonian->created_at }}</td>
                 <td style="text-align: center; ">
