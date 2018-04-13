@@ -12,9 +12,9 @@
 			  </div>
 			  <div class="slider-caption vertical-align white-color">
 			     <div class="container">
-			  	    <h2 class="h1 caption-stye-1 type-1"><img src="{{ asset('assets/img/logo.png') }}" alt="" class="logo-default" style="width: 495px; height: 150px;"></h2>
+			  	    <h2 class="h1 caption-stye-1 type-1"><img src="{{ asset('assets/img/logo.png') }}" alt="logo" class="logo-default" style="width: 495px; height: 150px;"></h2>
 				  	    <div class="simple-text lg">
-								 <p>{!! $page->text_1!!}</p>
+								 <h1><p>{!! $page->text_1!!}</p></h1>
 						</div>
 			  	    <a href="{{ route('page', array('alias' => 'about' )) }}" class="link-style-1 bg-w" ><span>детальніше</span></a><!--  or "#{{ 'about' }}"  -->
 			  	 </div>
@@ -29,7 +29,7 @@
 			  </div>
 			  <div class="slider-caption vertical-align white-color">
 			     <div class="container">
-			  	    <h2 class="h1 caption-stye-1 type-1"><img src="{{ asset('assets/img/logo.png') }}" alt="" class="logo-default" style="width: 495px; height: 150px;"></h2>
+			  	    <h2 class="h1 caption-stye-1 type-1"><img src="{{ asset('assets/img/logo.png') }}" alt="logo" class="logo-default" style="width: 495px; height: 150px;"></h2>
 				  	    <div class="simple-text lg">
 								 <p>{!! $page->text_2!!}</p>
 						</div>
@@ -46,7 +46,7 @@
 			  </div>
 			  <div class="slider-caption vertical-align white-color">
 			     <div class="container">
-			  	    <h2 class="h1 caption-stye-1 type-1"><img src="{{ asset('assets/img/logo.png') }}" alt="" class="logo-default" style="width: 495px; height: 150px;"></h2>
+			  	    <h2 class="h1 caption-stye-1 type-1"><img src="{{ asset('assets/img/logo.png') }}" alt="logo" class="logo-default" style="width: 495px; height: 150px;"></h2>
 				  	    <div class="simple-text lg">
 								 <p>{!! $page->text_3!!}</p>
 						</div>
