@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
   <head>
     <meta charset="utf-8">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no" /> 
-    <meta name="description" content="Ремонт гнучких ендоскопів бронхоскопів, колоноскопів, гастроскопів, дуоденоскопів"> 
+    <meta name="google-site-verification" content="6gDsLl6ReqSuMtFQ9GUXV4oz7G0YOqK8TjmbByUWj00" />
+    <meta name="description" content="Ремонт гнучких ендоскопів бронхоскопів, колоноскопів, гастроскопів, дуоденоскопів">
+    <meta name="theme-color" content="#e4e6e7"> 
             <link rel="shortcut icon" href="{{ asset('assets/favicon1.ico') }}"/> 
             <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
             <link href="{{ asset('assets/css/fontello.css') }}" rel="stylesheet" type="text/css"/>
             <link href="{{ asset('assets/css/idangerous.swiper.css') }}" rel="stylesheet" type="text/css"/>   
             <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css"/>
+            <link href="{{ asset('assets/css/lazy.css') }}" rel="stylesheet" type="text/css"/>
             <title>EndoscopyLviv - сервіс з ремонту та продажу ендоскопів та комплектуючих</title>
 
   </head>
@@ -128,7 +131,7 @@
 
 
                                                        
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/2.7.6/idangerous.swiper.min.js"></script>  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA69OfixgZvbLnSG3GB203NUEfZnjkDdww&v=3.exp"></script>
@@ -138,7 +141,7 @@
 <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
 <script id="all" src="{{ asset('assets/js/all.js') }}"></script>
 <script src="{{ asset('assets/js/anchors.nav.js') }}"></script> 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.4/jquery.lazy.min.js"></script>
 <!-- JS accordion-->
 <script type="text/javascript">
   $(document).ready(function($) {
@@ -153,6 +156,15 @@
     });
   });
 </script>
+
+<!-- Lazy-Loading Images -->
+<script type="text/javascript">
+    $(function() {
+        $('.lazy').lazy();
+        // $('.izotope-container').delay(1000).fadeIn(1000);
+    });
+</script> 
+
 
 </body>
 </html>				   

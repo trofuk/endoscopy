@@ -12,7 +12,7 @@
                 <div class="logo-item hover-circle">
                   <a href="#" class="image circle-point lg">
                       
-                      <img src="{{ 'assets/img/'.$partner->logo }}" alt="{{ $partner->name }}" style="width: 115px; height: 115px; position: absolute; margin: 25px" > 
+                      <img class="lazy" data-src="{{ 'assets/img/'.$partner->logo }}" alt="{{ $partner->name }}" style="width: 115px; height: 115px; position: absolute; margin: 25px" > 
                       
                       
                   </a>

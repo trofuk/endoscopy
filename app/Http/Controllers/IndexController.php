@@ -42,7 +42,7 @@ class IndexController extends Controller
 
                 'name' => 'required|max:255',
                 'email' => 'required|email',
-                'phone' => 'required',
+                // 'phone' => 'required',
                 'text' => 'required',
             
             ], $messages);

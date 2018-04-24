@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Disallow: /admin
+
+User-agent: *
+Allow: /
+
+Sitemap: http://endoscope.lviv.ua/sitemap.xml

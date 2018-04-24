@@ -1,7 +1,7 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
    	<tr>
 	   <td width="33%"><font color="#f35D14" size="2" face="Tahoma">Subject:</font></td>
-	   <td width="67%" height="22"><font color="#333333" size="-1" face="Tahoma">'Question'</font></td>
+	   <td width="67%" height="22"><font color="#333333" size="-1" face="Tahoma">'Запитання'</font></td>
 	</tr> 
 
 	<tr>

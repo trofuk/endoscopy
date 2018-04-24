@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<a href="index.html" class="footer-logo"><img src="{{ asset('assets/img/logo.png') }}" alt="" style="width: 165px; height: 50px;"></a>
+		<a href="index.html" class="footer-logo"><img src="{{ asset('assets/img/logo.png') }}" alt="footer logo" style="width: 165px; height: 50px;"></a>
 		<div class="col-md-4">
 			<div class="footer-item white-color">
 				
@@ -24,7 +24,7 @@
 		        <div class="f-link">
 		        	<ul>
 		        	@foreach($contacts as $contact) 
-                      <li><a href="mailto:">{{ $contact->email }}</a></li>
+                      <li><a href="mailto:" title="Contact email">{{ $contact->email }}</a></li>
                     @endforeach
                 	</ul>
                 </div>
@@ -36,7 +36,7 @@
 		         <div class="f-link">
 		         	<ul>
 		         	@foreach($contacts as $contact)
-                       <li><a href="tel:">{{ $contact->phone }}</a></li>
+                       <li><a href="tel:" title="Contact phone">{{ $contact->phone }}</a></li>
                     @endforeach
                 	</ul>
                 </div>

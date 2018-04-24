@@ -7,8 +7,8 @@
 	   <div class="swiper-slide first-slide" data-val="0">
 		  <div class="block-bg">
 		      <div class="bg-wrap">
-			     <div class="bg" style="background-image:url({{ asset( 'assets/img/'.$page->image_1) }})"></div>
-			       <div class="black-layer"></div>
+			     <div class="bg lazy" data-src="{{ asset('assets/img/'.$page->image_1) }}"  ></div>
+			       <div class="black-layer" ></div>
 			  </div>
 			  <div class="slider-caption vertical-align white-color">
 			     <div class="container">
@@ -24,8 +24,8 @@
 	   <div class="swiper-slide" data-val="1">
 		  <div class="block-bg">
 		      <div class="bg-wrap">
-			     <div class="bg" style="background-image:url({{ asset('assets/img/'.$page->image_2) }})"></div>
-			       <div class="black-layer"></div>
+			     <div class="bg lazy" data-src="{{ asset('assets/img/'.$page->image_2) }}" ></div>
+			       <div class="black-layer" ></div>
 			  </div>
 			  <div class="slider-caption vertical-align white-color">
 			     <div class="container">
@@ -33,7 +33,7 @@
 				  	    <div class="simple-text lg">
 								 <p>{!! $page->text_2!!}</p>
 						</div>
-			  	    <a href="{{ route('page', array('alias' => $page->alias)) }}" class="link-style-1 bg-w"><span>детальніше</span></a>
+			  	    <a href="{{ route('page', array('alias' => 'about' )) }}" class="link-style-1 bg-w"><span>детальніше</span></a>
 			  	  </div>
 			  </div>
 		  </div>
@@ -41,8 +41,8 @@
 	   <div class="swiper-slide" data-val="2">
 		  <div class="block-bg">
 		      <div class="bg-wrap">
-			     <div class="bg" style="background-image:url({{ asset('assets/img/'.$page->image_3) }})"></div>
-			       <div class="black-layer"></div>
+			     <div class="bg lazy" data-src="{{ asset('assets/img/'.$page->image_3) }}" ></div>
+			       <div class="black-layer" ></div>
 			  </div>
 			  <div class="slider-caption vertical-align white-color">
 			     <div class="container">
@@ -50,7 +50,7 @@
 				  	    <div class="simple-text lg">
 								 <p>{!! $page->text_3!!}</p>
 						</div>
-			  	    <a href="{{ route('page', array('alias' => $page->alias)) }}" class="link-style-1 bg-w"><span>детальніше</span></a>
+			  	    <a href="{{ route('page', array('alias' => 'about' )) }}" class="link-style-1 bg-w"><span>детальніше</span></a>
 			  	  </div>
 			  </div>
 		  </div>

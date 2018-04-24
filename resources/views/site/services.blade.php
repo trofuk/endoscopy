@@ -12,7 +12,7 @@
         <?php $texts = explode(".", $service->text); ?> 
         <div class="col-md-4 col-sm-6 col-xs-12">
              <div class="service-item hover-circle">
-                  <div class="image circle-point lg"><img src="{{ asset('assets/img/'.$service->icon) }}" style="max-width: 70px; max-height: 90px;" alt="{{$service->name}}"></div>
+                  <div class="image circle-point lg"><img class="lazy" data-src="{{ asset('assets/img/'.$service->icon) }}" style="max-width: 70px; max-height: 90px;" alt="{{$service->name}}"></div>
                     <h4 class="h4  title">{{$service->name}}</h4>
                     <div class="text">
                         <ul class="list-style-1" style="font-family: inherit;">

@@ -36,15 +36,18 @@
 						 <div class="swiper-slide swiper-slide-visible swiper-slide-active active" data-val="0">
 							  <div class="portfolio-slide">
 							  	
-							  	{{ Html::image('assets/img/products/'.$product->image_1, $product->name) }}	
+							  	<img class="lazy" data-src="{{ 'assets/img/products/'.$product->image_1 }}" />
+							  
 								  
 							  </div> 
 						 </div>
 						 @if($product->image_2)
 						 <div class="swiper-slide" data-val="1">				      
 							  <div class="portfolio-slide">
+
+							  	<img class="lazy" data-src="{{ 'assets/img/products/'.$product->image_2 }}" />
 							  	
-							  	{{ Html::image('assets/img/products/'.$product->image_2, $product->name) }}
+							  
 								 
 							  </div> 
 						 </div>
@@ -53,8 +56,8 @@
 						 <div class="swiper-slide" data-val="2">
 							  <div class="portfolio-slide">
 							  	
-							  	{{ Html::image('assets/img/products/'.$product->image_3, $product->name) }}
-								  
+							  	<img class="lazy" data-src="{{ 'assets/img/products/'.$product->image_3 }}" />
+							  	
 							  </div> 
 						 </div>
 						 @endif
@@ -62,8 +65,8 @@
 						 <div class="swiper-slide" data-val="3">
 							  <div class="portfolio-slide">
 							  	
-							  	{{ Html::image('assets/img/products/'.$product->image_4, $product->name) }}
-								  
+							  	<img class="lazy" data-src="{{ 'assets/img/products/'.$product->image_4 }}" />
+							  	
 							  </div> 
 						 </div>
 						 @endif
@@ -80,15 +83,17 @@
 				       <div class="swiper-slide">
 				          <div class="prev-img active" data-val="0">
 							
-							{{ Html::image('assets/img/products/'.$product->image_1, $product->name) }}
+							<img class="lazy" data-src="{{ 'assets/img/products/'.$product->image_1 }}" />
+
 	          	 
 				          </div>
 					   </div>
 						@if($product->image_2)
 					   <div class="swiper-slide">
 				          <div class="prev-img" data-val="1">
-
-				          	{{ Html::image('assets/img/products/'.$product->image_2, $product->name) }}
+							
+							<img class="lazy" data-src="{{ 'assets/img/products/'.$product->image_2 }}" />
+				          	
 				          	 
 				          </div>
 					   </div>
@@ -97,7 +102,8 @@
 					   <div class="swiper-slide">
 				          <div class="prev-img" data-val="2">
 
-				          	{{ Html::image('assets/img/products/'.$product->image_3, $product->name) }}
+				          	<img class="lazy" data-src="{{ 'assets/img/products/'.$product->image_3 }}" />
+				          	
 				          	 
 				          </div>
 					   </div>
@@ -106,7 +112,8 @@
 					   <div class="swiper-slide">
 				          <div class="prev-img" data-val="3">
 
-				          	{{ Html::image('assets/img/products/'.$product->image_4, $product->name) }}
+				          	<img class="lazy" data-src="{{ 'assets/img/products/'.$product->image_4 }}" />
+				        
 				          	 
 				          </div>
 					   </div>

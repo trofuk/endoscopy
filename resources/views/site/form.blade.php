@@ -23,33 +23,37 @@
                 <div class="contact-item" style="display: inline-grid;">
                      <h4 class="h4 title">пошта</h4>
                      @foreach($contacts as $k => $contact) 
-                        <a href="mailto:">{{ $contact->email }}</a>
+                        <a href="mailto:" title="Contact email">{{ $contact->email }}</a>
                       @endforeach                   
                 </div>
 
                 <div class="contact-item" style="display: inline-grid;">
                      <h4 class="h4 title">телефон</h4>
                      @foreach($contacts as $k => $contact)
-                        <a href="tel:">{{ $contact->phone }}</a>
+                        <a href="tel:" title="Contact phone">{{ $contact->phone }}</a>
                      @endforeach
                 </div>
 
                 <form action="{{ route('contact') }}" method="POST" name="contactform" class="contact-form" id="contact-form">
                      <h4 class="h4 title">Ваше запитання?</h4>
                      <div class="input-field col-wh-50">
-                           <input placeholder="Ім'я" name="name">
+                          <label for="name">Ім'я</label>
+                          <input name="name" id="name"> 
                            <span></span>
                       </div>
                       <div class="input-field col-wh-50">
-                           <input placeholder="Пошта" name="email" > 
+                           <label for="email">Пошта</label> 
+                           <input name="email" id="email" > 
                            <span></span>
                       </div>
                       <div class="input-field col-wh-50">
-                           <input placeholder="Телефон" name="phone" > 
+                           <label for="phone">Телефон</label> 
+                           <input name="phone" id="phone" > 
                            <span></span>
                       </div>
                       <div class="input-field">
-                           <input placeholder="Запитання" name="text">
+                           <label for="text">Запитання</label> 
+                           <input name="text" id="text">
                            <span></span>
                       </div>
                       <button type="submit" class="link-style-1 submit"><span>надіслати</span></button>
