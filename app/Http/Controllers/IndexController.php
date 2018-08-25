@@ -104,6 +104,9 @@ class IndexController extends Controller
     	$item = array('title' => 'факти', 'alias' => 'facts');
     	array_push($menu, $item);
 
+        $item = array('title' => 'послуги', 'alias' => 'services');
+        array_push($menu, $item);
+
     	$item = array('title' => 'продукція', 'alias' => 'products');
     	array_push($menu, $item);
 

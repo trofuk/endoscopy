@@ -1,4 +1,4 @@
-<div class="bg ready data-jarallax" data-jarallax="5" style="background-image:url({{ asset('assets/img/products_bg.jpg') }})"></div>
+<div class="bg lazy ready data-jarallax" data-jarallax="5"   data-src="{{ asset('assets/img/products_bg.jpg') }}"         ></div>
 <div class="black-layer"></div>
  <div class="container">
      <div class="section-caption white-color">
@@ -75,6 +75,6 @@
      </div>
      <div class="text-center">
        <a href="#" class="link-style-1 load-more"><span>Більше товарів</span></a>
-       <span class="no-item">Більше немає</span>
+       <span class="no-item" style="position: absolute; color: white; ">Більше немає</span>
      </div>
     </div>

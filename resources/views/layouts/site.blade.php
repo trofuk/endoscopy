@@ -54,7 +54,7 @@
   	@endif
 	
 	@if(isset($services) && is_object($services))
-  	<section class="section">
+  	<section class="section" id="services">
 		@yield('services')
   	</section>
   	@endif

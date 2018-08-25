@@ -17,7 +17,7 @@
                     <div class="text">
                         <ul class="list-style-1" style="font-family: inherit;">
                           @foreach($texts as $text)
-                          <li style="font-size: 14px; ">{!!$text!!}</li>
+                          <li style="font-size: 14px; color: #000;">{!!$text!!}</li>
                           @endforeach
 
                         </ul>
