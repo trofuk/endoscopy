@@ -77,7 +77,8 @@ textarea:-ms-input-placeholder {color:#a1a1a1; opacity: 1;}
 .vertical-align.right-align {right: 0px; left: auto; width: 50%;}
 .clear{clear:both; overflow:hidden; height:0px; font-size:0px; display: block;}
 .bg-wrap {overflow: hidden; position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;}
-.bg {position:absolute; left:0px; top:0px; width:100%; height:100%; overflow:hidden; background-position: 50% 50%; background-repeat: no-repeat; background-attachment: scroll; -webkit-background-size: cover;-moz-background-size: cover; -o-background-size: cover;-ms-background-size: cover; background-size: cover; backface-visibility: hidden;}
+.bg {position:absolute; left:0px; top:0px; width:100%; height:100%; overflow:hidden; background-repeat: no-repeat; background-attachment: scroll; -webkit-background-size: cover;-moz-background-size: cover; -o-background-size: cover;-ms-background-size: cover; background-size: cover; backface-visibility: hidden;}
+/*background-position: 50% 50%;*/
 .bg.fix {background-attachment: fixed;}
 /*body.mobile .bg.fix {background-attachment: scroll;}*/
 .text-center {text-align: center;}
